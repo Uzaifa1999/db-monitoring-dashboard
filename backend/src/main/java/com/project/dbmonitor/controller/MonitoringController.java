@@ -43,4 +43,14 @@ public class MonitoringController {
         service.deleteMetric(time);
         return ResponseEntity.ok("Deleted successfully");
     }
+    
+    @GetMapping("/postgres-performance")
+    public List<Map<String, Object>> postgresPerformance() {
+        return service.postgresPerformance();
+    }
+
+    @GetMapping("/timescale-performance")
+    public List<Map<String, Object>> timescalePerformance() {
+        return service.timescalePerformance();
+    }
 }

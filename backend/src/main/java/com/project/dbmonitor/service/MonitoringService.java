@@ -21,4 +21,11 @@ public class MonitoringService {
     public void deleteMetric(String time) {
         repo.deleteMetric(time);
     }
+    public List<Map<String, Object>> postgresPerformance() {
+        return repo.postgresPerformance();
+    }
+
+    public List<Map<String, Object>> timescalePerformance() {
+        return repo.timescalePerformance();
+    }
 }
