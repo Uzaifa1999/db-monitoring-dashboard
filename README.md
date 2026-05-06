@@ -1,7 +1,15 @@
 # 📊 System Metrics Dashboard
 
-A real-time monitoring dashboard built with **Spring Boot + Angular + PostgreSQL + Chart.js**.
 
+The project compares:
+- Normal PostgreSQL tables
+- TimescaleDB hypertables
+
+using:
+- EXPLAIN ANALYZE
+- time_bucket()
+- aggregation workloads
+- time-series queries
 ## ✨ Features
 
 * View system metrics (CPU, memory, active connections)
